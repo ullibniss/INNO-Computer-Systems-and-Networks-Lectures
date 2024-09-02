@@ -1,6 +1,6 @@
 # Computer Systems and Networks
 
-## Lecture 1 Exercises. Done by Joel Okoro and Fedorov Alexey. Group: [M24-SNE-01]
+## Lecture 1 Exercises. Done by Joel Okore and Fedorov Alexey. Group: [M24-SNE-01]
 
 ### Exersice 1
 ```
@@ -32,7 +32,7 @@ it
 - **Location** - Users should be able to access shared files data without interference between each other.
 - **Migration** - User dont care about where his file stored. If we need to migrate file, User experience must not be affected.
 - **Replication** - Replication of data must not concern user. It means that operations of uploading, downloading data to/from replica must not make influence of how system works.
-- **Concurrency** - Users should be able edit files together.y 
+- **Concurrency** - Users should be able edit files together.
 - **Failure** - There are many reasons for system failure. The worst thing is that part of them depends on third parties. Every time system fails, it must not affect the user. If it is impossible, system downtime should be short as it can be.
 - **Scaling** - System should be adaptable to growing load. All elements must be scalable.
 
@@ -78,3 +78,16 @@ To avoid single points of failure, Load Balancing can be incorporated. By distri
 #### Consider Failure Handling
 
 We described failover solutions in previous task. Hope it is enough.
+
+### Exercise 2
+```
+Which kind of transparencies are supported by the DNS?
+```
+ 
+- **Replication** - As a minimum dns records are replicated on root servers.
+- **Concurrency** - DNS implements concurrent access for the same records.
+- **Failure** - For failure handling the  architecture of DNS splited by layers.
+![image](https://github.com/user-attachments/assets/e7ae2ef9-d5f2-49b9-aa40-fd6dfc3d72ee)
+- **Scaling** - DNS architecture accepts scaling.
+- **Performance** - The configuration of the DNS not be apparent to the user in terms of performance. 
+
